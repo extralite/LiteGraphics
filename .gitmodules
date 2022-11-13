@@ -1,4 +1,4 @@
 [submodule "glad"]
 	path = glad
 	url = https://github.com/Dav1dde/glad.git
-	branch = glad2
+	branch = v2.0.1
