@@ -8,21 +8,18 @@ set(LITE_GFX_SOURCES
         src/LiteGraphics.cpp
         )
 
-set(LITE_GFX_LIBRARIES
-        glad
-        )
-
 if (UNIX AND NOT APPLE)
     target_compile_options(glad PRIVATE "-fPIC")
 endif ()
+
+set(LITEGFX_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include
+        CACHE PATH "LiteGraphics include directory" FORCE)
 
 add_library(litegfx SHARED ${LITE_GFX_SOURCES})
 set_property(TARGET litegfx PROPERTY C_STANDARD 11)
 set_property(TARGET litegfx PROPERTY CXX_STANDARD 11)
 
-target_link_libraries(litegfx ${LITE_GFX_LIBRARIES})
+target_link_libraries(litegfx PRIVATE glad)
 
-target_include_directories(litegfx PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-        ${GLAD_DIR}/include
-        )
+target_include_directories(litegfx PUBLIC ${LITEGFX_INCLUDE_DIRS})
+target_include_directories(litegfx PRIVATE ${GLAD_DIR}/include)
