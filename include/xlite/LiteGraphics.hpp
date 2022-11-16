@@ -5,6 +5,7 @@
 #include <xlite/ogl/FragmentShader.hpp>
 #include <xlite/ogl/Shader.hpp>
 #include <xlite/ogl/ShaderProgram.hpp>
+#include <xlite/ogl/VertexArrayObject.hpp>
 #include <xlite/ogl/VertexBufferObject.hpp>
 #include <xlite/ogl/VertexShader.hpp>
 

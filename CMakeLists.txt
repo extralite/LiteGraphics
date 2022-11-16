@@ -11,6 +11,7 @@ file(GLOB_RECURSE LITE_GFX_SOURCES
         src/ogl/FragmentShader.cpp
         src/ogl/Shader.cpp
         src/ogl/ShaderProgram.cpp
+        src/ogl/VertexArrayObject.cpp
         src/ogl/VertexBufferObject.cpp
         src/ogl/VertexShader.cpp
         )
