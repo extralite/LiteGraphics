@@ -1,5 +1,9 @@
 #pragma once
 
+#include <xlite/ogl/BufferObject.hpp>
+#include <xlite/ogl/ElementBufferObject.hpp>
+#include <xlite/ogl/VertexBufferObject.hpp>
+
 #include <cstdint>
 
 namespace Lite {

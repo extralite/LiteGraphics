@@ -6,6 +6,9 @@ glad_add_library(glad EXCLUDE_FROM_ALL STATIC LOADER API gl:core=3.3)
 
 file(GLOB_RECURSE LITE_GFX_SOURCES
         src/LiteGraphics.cpp
+        src/ogl/BufferObject.cpp
+        src/ogl/ElementBufferObject.cpp
+        src/ogl/VertexBufferObject.cpp
         )
 
 if (UNIX AND NOT APPLE)
