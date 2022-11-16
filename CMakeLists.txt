@@ -4,7 +4,7 @@ project(LiteGraphics)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/glad/cmake)
 glad_add_library(glad EXCLUDE_FROM_ALL STATIC LOADER API gl:core=3.3)
 
-set(LITE_GFX_SOURCES
+file(GLOB_RECURSE LITE_GFX_SOURCES
         src/LiteGraphics.cpp
         )
 
