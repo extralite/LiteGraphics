@@ -2,7 +2,11 @@
 
 #include <xlite/ogl/BufferObject.hpp>
 #include <xlite/ogl/ElementBufferObject.hpp>
+#include <xlite/ogl/FragmentShader.hpp>
+#include <xlite/ogl/Shader.hpp>
+#include <xlite/ogl/ShaderProgram.hpp>
 #include <xlite/ogl/VertexBufferObject.hpp>
+#include <xlite/ogl/VertexShader.hpp>
 
 #include <cstdint>
 
